@@ -28,6 +28,16 @@
           "libs/data-access/**/*.html"
         ]
       }
+    },
+    "generate": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          {
+            "command": "npx graphql-codegen --config libs/data-access/codegen.ts"
+          }
+        ]
+      }
     }
   },
   "tags": []
